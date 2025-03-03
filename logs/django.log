@@ -3,3 +3,693 @@ INFO 2025-03-02 15:15:48,145 autoreload 25938 8231880768 /Users/shizhou/2025/DRF
 INFO 2025-03-02 15:15:48,544 autoreload 26058 8231880768 Watching for file changes with StatReloader
 INFO 2025-03-02 15:16:18,590 autoreload 26058 8231880768 /Users/shizhou/2025/DRFAPICursor/users/utils/response.py changed, reloading.
 INFO 2025-03-02 15:16:18,975 autoreload 26072 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:44:54,078 autoreload 26072 8231880768 /Users/shizhou/2025/DRFAPICursor/core/settings.py changed, reloading.
+INFO 2025-03-02 15:44:54,535 autoreload 29426 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:45:29,630 autoreload 29426 8231880768 /Users/shizhou/2025/DRFAPICursor/users/models.py changed, reloading.
+INFO 2025-03-02 15:45:30,017 autoreload 29475 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:45:44,554 autoreload 29475 8231880768 /Users/shizhou/2025/DRFAPICursor/users/models.py changed, reloading.
+INFO 2025-03-02 15:45:44,921 autoreload 29511 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:46:03,453 autoreload 29511 8231880768 /Users/shizhou/2025/DRFAPICursor/users/serializers.py changed, reloading.
+INFO 2025-03-02 15:46:03,882 autoreload 29524 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:46:34,900 autoreload 29524 8231880768 /Users/shizhou/2025/DRFAPICursor/users/views.py changed, reloading.
+INFO 2025-03-02 15:46:35,298 autoreload 29543 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:46:50,870 autoreload 29543 8231880768 /Users/shizhou/2025/DRFAPICursor/users/urls.py changed, reloading.
+INFO 2025-03-02 15:46:51,234 autoreload 29566 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:47:37,446 autoreload 29566 8231880768 /Users/shizhou/2025/DRFAPICursor/users/models.py changed, reloading.
+INFO 2025-03-02 15:47:37,827 autoreload 29638 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:47:40,096 autoreload 29638 8231880768 /Users/shizhou/2025/DRFAPICursor/core/settings.py changed, reloading.
+INFO 2025-03-02 15:47:40,334 autoreload 29650 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:48:52,419 autoreload 29790 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 15:49:11,015 autoreload 29849 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:07:42,368 logger 29849 6204616704 HTTP Request: {"timestamp": "2025-03-02T16:07:42.368170+00:00", "method": "OPTIONS", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.00959, "user_id": null}
+INFO 2025-03-02 16:07:42,372 basehttp 29849 6204616704 "OPTIONS /api/users/sms/send/ HTTP/1.1" 200 196
+INFO 2025-03-02 16:10:04,317 logger 29849 6204616704 HTTP Request: {"timestamp": "2025-03-02T16:10:04.317103+00:00", "method": "OPTIONS", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.020322, "user_id": null}
+INFO 2025-03-02 16:10:04,319 basehttp 29849 6204616704 "OPTIONS /api/users/sms/send/ HTTP/1.1" 200 196
+INFO 2025-03-02 16:12:15,403 logger 29849 6204616704 API Request: {"timestamp": "2025-03-02T16:12:15.400956+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 16:12:15,760 sms 29849 6204616704 短信验证码发送成功: 13909282921, 验证码: 387703
+INFO 2025-03-02 16:12:15,763 logger 29849 6204616704 API Response: {"timestamp": "2025-03-02T16:12:15.762921+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.361965, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 16:12:15,763 logger 29849 6204616704 HTTP Request: {"timestamp": "2025-03-02T16:12:15.763412+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.364111, "user_id": null}
+INFO 2025-03-02 16:12:15,763 basehttp 29849 6204616704 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 16:16:16,476 logger 29849 6204616704 API Request: {"timestamp": "2025-03-02T16:16:16.475218+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 16:16:16,746 sms 29849 6204616704 短信验证码发送成功: 13909282921, 验证码: 621305
+INFO 2025-03-02 16:16:16,748 logger 29849 6204616704 API Response: {"timestamp": "2025-03-02T16:16:16.748207+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.272989, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 16:16:16,748 logger 29849 6204616704 HTTP Request: {"timestamp": "2025-03-02T16:16:16.748644+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.274566, "user_id": null}
+INFO 2025-03-02 16:16:16,748 basehttp 29849 6204616704 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 16:16:37,807 logger 29849 6204616704 API Request: {"timestamp": "2025-03-02T16:16:37.806898+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "621305"}, "user_id": null}
+INFO 2025-03-02 16:16:37,943 logger 29849 6204616704 API Response: {"timestamp": "2025-03-02T16:16:37.943396+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.136498, "user_id": null, "data": {"code": 200, "message": "操作成功", "data": {"user": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}, "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTUzNjk5NywiaWF0IjoxNzQwOTMyMTk3LCJqdGkiOiI2NDVjMGRkMjFkMTE0NzQ3YjZhZmYzMTVhZGFmYjdlMiIsInVzZXJfaWQiOiJjYmRlOWYxYS0xODUyLTRlMGYtYTE5OS1lZjA3OTA2NDQyNTMifQ.u0OPmWw-ZetePMqID2lUPhsnbUaIW8chejCKX2KvHNA", "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMDE4NTk3LCJpYXQiOjE3NDA5MzIxOTcsImp0aSI6IjI0MTQ1NjMyMTc0ZjRkZjZiODMwMmM0ZTM2ZGZjNGUwIiwidXNlcl9pZCI6ImNiZGU5ZjFhLTE4NTItNGUwZi1hMTk5LWVmMDc5MDY0NDI1MyJ9._gJPm1P9KH3FFFOMIfiEiqzn-rjCQ47K_8zqOvMoJwI"}}}
+INFO 2025-03-02 16:16:37,943 logger 29849 6204616704 HTTP Request: {"timestamp": "2025-03-02T16:16:37.943661+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.138572, "user_id": null}
+INFO 2025-03-02 16:16:37,943 basehttp 29849 6204616704 "POST /api/users/sms/login/ HTTP/1.1" 200 886
+INFO 2025-03-02 16:17:46,667 logger 29849 6204616704 API Request: {"timestamp": "2025-03-02T16:17:46.667534+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13800138000"}, "user_id": null}
+INFO 2025-03-02 16:17:46,929 sms 29849 6204616704 短信验证码发送成功: 13800138000, 验证码: 156431
+INFO 2025-03-02 16:17:46,931 logger 29849 6204616704 API Response: {"timestamp": "2025-03-02T16:17:46.931303+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.263769, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 16:17:46,931 logger 29849 6204616704 HTTP Request: {"timestamp": "2025-03-02T16:17:46.931550+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.264572, "user_id": null}
+INFO 2025-03-02 16:17:46,931 basehttp 29849 6204616704 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 16:19:53,168 autoreload 32022 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:24:43,084 logger 32022 6132330496 API Request: {"timestamp": "2025-03-02T16:24:43.083895+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 16:24:43,383 sms 32022 6132330496 短信验证码发送成功: 13909282921, 验证码: 367751
+INFO 2025-03-02 16:24:43,384 logger 32022 6132330496 API Response: {"timestamp": "2025-03-02T16:24:43.384684+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.300789, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 16:24:43,384 logger 32022 6132330496 HTTP Request: {"timestamp": "2025-03-02T16:24:43.384946+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.302215, "user_id": null}
+INFO 2025-03-02 16:24:43,385 basehttp 32022 6132330496 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 16:25:01,973 logger 32022 6132330496 API Request: {"timestamp": "2025-03-02T16:25:01.972953+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "367751"}, "user_id": null}
+INFO 2025-03-02 16:25:02,056 logger 32022 6132330496 API Response: {"timestamp": "2025-03-02T16:25:02.056363+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.08341, "user_id": null, "data": {"code": 200, "message": "操作成功", "data": {"user": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}, "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTUzNzUwMSwiaWF0IjoxNzQwOTMyNzAxLCJqdGkiOiIzOGUwMzMyMDBhMjc0NDc1YWM1YWRjZmY1YjAxNDM1NyIsInVzZXJfaWQiOiJjYmRlOWYxYS0xODUyLTRlMGYtYTE5OS1lZjA3OTA2NDQyNTMifQ.uQVWB2LxvikHFMZvDeca5rXUh-zaif0RF9-0gFQ0Bgg", "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMDE5MTAxLCJpYXQiOjE3NDA5MzI3MDEsImp0aSI6ImYyZjE2ZjU5MDdhOTQzZTlhNmM4ODcwMmRhMWY1ZWMzIiwidXNlcl9pZCI6ImNiZGU5ZjFhLTE4NTItNGUwZi1hMTk5LWVmMDc5MDY0NDI1MyJ9.AR2GsvJrgim_gY4Erv9Xw6Z4BrYydpm2xJwLYYTmnx8"}}}
+INFO 2025-03-02 16:25:02,056 logger 32022 6132330496 HTTP Request: {"timestamp": "2025-03-02T16:25:02.056683+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.08405, "user_id": null}
+INFO 2025-03-02 16:25:02,056 basehttp 32022 6132330496 "POST /api/users/sms/login/ HTTP/1.1" 200 886
+INFO 2025-03-02 16:31:41,531 logger 32022 6132330496 API Request: {"timestamp": "2025-03-02T16:31:41.531480+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 16:31:41,825 sms 32022 6132330496 短信验证码发送成功: 13909282921, 验证码: 785522
+INFO 2025-03-02 16:31:41,827 logger 32022 6132330496 API Response: {"timestamp": "2025-03-02T16:31:41.827337+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.295857, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 16:31:41,827 logger 32022 6132330496 HTTP Request: {"timestamp": "2025-03-02T16:31:41.827653+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.297357, "user_id": null}
+INFO 2025-03-02 16:31:41,828 basehttp 32022 6132330496 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 16:31:53,710 logger 32022 6132330496 API Request: {"timestamp": "2025-03-02T16:31:53.710468+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "785522"}, "user_id": null}
+INFO 2025-03-02 16:31:53,726 logger 32022 6132330496 API Response: {"timestamp": "2025-03-02T16:31:53.726184+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.015716, "user_id": null, "data": {"code": 200, "message": "操作成功", "data": {"user": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}, "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTUzNzkxMywiaWF0IjoxNzQwOTMzMTEzLCJqdGkiOiJjZWJhMmJlZWIxOWI0YmQyYmViOGM0OTA0MTk0M2ZmMiIsInVzZXJfaWQiOiJjYmRlOWYxYS0xODUyLTRlMGYtYTE5OS1lZjA3OTA2NDQyNTMifQ.eXAte5HDYG0-qE5uOSp6oAiEMhUJzpCspZ63pTpwDVM", "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMDE5NTEzLCJpYXQiOjE3NDA5MzMxMTMsImp0aSI6IjkzMzMwMzJiY2YzNDQ3M2NiNGUyY2FkNGI5NTUzM2ZhIiwidXNlcl9pZCI6ImNiZGU5ZjFhLTE4NTItNGUwZi1hMTk5LWVmMDc5MDY0NDI1MyJ9.KOsGgj6uWW4vRDrDmQJGdUUakE7sd7MlSfLO-CN7mPY"}}}
+INFO 2025-03-02 16:31:53,726 logger 32022 6132330496 HTTP Request: {"timestamp": "2025-03-02T16:31:53.726555+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.016415, "user_id": null}
+INFO 2025-03-02 16:31:53,726 basehttp 32022 6132330496 "POST /api/users/sms/login/ HTTP/1.1" 200 886
+ERROR 2025-03-02 16:37:13,665 log 32022 6132330496 Internal Server Error: /api/users/me/
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 30, in wrapper
+    query_params = dict(request.query_params)
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'query_params'
+INFO 2025-03-02 16:37:13,668 logger 32022 6132330496 HTTP Request: {"timestamp": "2025-03-02T16:37:13.668134+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 500, "execution_time": 0.10262, "user_id": null}
+ERROR 2025-03-02 16:37:13,668 basehttp 32022 6132330496 "GET /api/users/me/ HTTP/1.1" 500 77773
+ERROR 2025-03-02 16:40:08,980 log 32022 6132330496 Internal Server Error: /api/users/me/
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 30, in wrapper
+    query_params = dict(request.query_params)
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'query_params'
+INFO 2025-03-02 16:40:08,983 logger 32022 6132330496 HTTP Request: {"timestamp": "2025-03-02T16:40:08.982769+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 500, "execution_time": 0.021804, "user_id": null}
+ERROR 2025-03-02 16:40:08,983 basehttp 32022 6132330496 "GET /api/users/me/ HTTP/1.1" 500 77772
+ERROR 2025-03-02 16:41:52,752 log 32022 6132330496 Internal Server Error: /api/users/me/
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 30, in wrapper
+    query_params = dict(request.query_params)
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'query_params'
+INFO 2025-03-02 16:41:52,763 logger 32022 6132330496 HTTP Request: {"timestamp": "2025-03-02T16:41:52.762642+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 500, "execution_time": 0.171068, "user_id": null}
+ERROR 2025-03-02 16:41:52,771 basehttp 32022 6132330496 "GET /api/users/me/ HTTP/1.1" 500 77773
+INFO 2025-03-02 16:43:34,286 autoreload 32022 8231880768 /Users/shizhou/2025/DRFAPICursor/users/utils/logger.py changed, reloading.
+INFO 2025-03-02 16:43:34,785 autoreload 33388 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:44:45,411 autoreload 33483 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:45:23,523 logger 33483 6133690368 API Request: {"timestamp": "2025-03-02T16:45:23.523143+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+ERROR 2025-03-02 16:45:23,614 log 33483 6133690368 Internal Server Error: /api/users/me/
+Traceback (most recent call last):
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 95, in wrapper
+    logger.info(f"API Response: {json.dumps(response_log, ensure_ascii=False)}")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UUID is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 114, in wrapper
+    logger.error(f"API Exception: {json.dumps(error_log, ensure_ascii=False)}")
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UUID is not JSON serializable
+ERROR 2025-03-02 16:45:23,625 log 33483 6133690368 Internal Server Error: /api/users/me/
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 154, in __call__
+    logger.info(f"HTTP Request: {json.dumps(log_data, ensure_ascii=False)}")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UUID is not JSON serializable
+ERROR 2025-03-02 16:45:23,626 basehttp 33483 6133690368 "GET /api/users/me/ HTTP/1.1" 500 82751
+INFO 2025-03-02 16:47:18,289 autoreload 33483 8231880768 /Users/shizhou/2025/DRFAPICursor/users/utils/logger.py changed, reloading.
+INFO 2025-03-02 16:47:18,700 autoreload 33585 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:47:29,196 autoreload 33585 8231880768 /Users/shizhou/2025/DRFAPICursor/users/utils/logger.py changed, reloading.
+INFO 2025-03-02 16:47:29,556 autoreload 33605 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:47:38,062 autoreload 33710 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:49:32,907 logger 33710 6155694080 API Request: {"timestamp": "2025-03-02T16:49:32.907150+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 16:49:32,957 logger 33710 6155694080 API Response: {"timestamp": "2025-03-02T16:49:32.957849+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.050699, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "data": {"code": 200, "message": "操作成功", "data": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}}}
+INFO 2025-03-02 16:49:32,958 logger 33710 6155694080 HTTP Request: {"timestamp": "2025-03-02T16:49:32.958066+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.051722, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253"}
+INFO 2025-03-02 16:49:32,958 basehttp 33710 6155694080 "GET /api/users/me/ HTTP/1.1" 200 296
+INFO 2025-03-02 16:50:01,456 logger 33710 6155694080 API Request: {"timestamp": "2025-03-02T16:50:01.456043+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 16:50:01,460 logger 33710 6155694080 API Response: {"timestamp": "2025-03-02T16:50:01.460099+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.004056, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "data": {"code": 200, "message": "操作成功", "data": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}}}
+INFO 2025-03-02 16:50:01,460 logger 33710 6155694080 HTTP Request: {"timestamp": "2025-03-02T16:50:01.460252+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.00433, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253"}
+INFO 2025-03-02 16:50:01,460 basehttp 33710 6155694080 "GET /api/users/me/ HTTP/1.1" 200 296
+INFO 2025-03-02 16:50:11,140 logger 33710 6155694080 API Request: {"timestamp": "2025-03-02T16:50:11.140228+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 16:50:11,143 logger 33710 6155694080 API Response: {"timestamp": "2025-03-02T16:50:11.143882+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.003654, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "data": {"code": 200, "message": "操作成功", "data": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}}}
+INFO 2025-03-02 16:50:11,144 logger 33710 6155694080 HTTP Request: {"timestamp": "2025-03-02T16:50:11.144282+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.004118, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253"}
+INFO 2025-03-02 16:50:11,144 basehttp 33710 6155694080 "GET /api/users/me/ HTTP/1.1" 200 296
+INFO 2025-03-02 16:51:01,220 logger 33710 6155694080 API Request: {"timestamp": "2025-03-02T16:51:01.219910+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 16:51:01,229 logger 33710 6155694080 API Response: {"timestamp": "2025-03-02T16:51:01.229808+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.009898, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "data": {"code": 200, "message": "操作成功", "data": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}}}
+INFO 2025-03-02 16:51:01,230 logger 33710 6155694080 HTTP Request: {"timestamp": "2025-03-02T16:51:01.230103+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.010885, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253"}
+INFO 2025-03-02 16:51:01,230 basehttp 33710 6155694080 "GET /api/users/me/ HTTP/1.1" 200 296
+INFO 2025-03-02 16:51:16,429 autoreload 33857 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 16:51:25,412 logger 33857 6188986368 API Request: {"timestamp": "2025-03-02T16:51:25.412673+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 16:51:25,450 logger 33857 6188986368 API Response: {"timestamp": "2025-03-02T16:51:25.450040+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.037367, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "data": {"code": 200, "message": "操作成功", "data": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}}}
+INFO 2025-03-02 16:51:25,450 logger 33857 6188986368 HTTP Request: {"timestamp": "2025-03-02T16:51:25.450230+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.037652, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253"}
+INFO 2025-03-02 16:51:25,450 basehttp 33857 6188986368 "GET /api/users/me/ HTTP/1.1" 200 296
+INFO 2025-03-02 16:54:13,569 logger 33857 6188986368 HTTP Request: {"timestamp": "2025-03-02T16:54:13.568698+00:00", "method": "GET", "path": "/api/api/users/me/", "status_code": 404, "execution_time": 0.012557, "user_id": null}
+WARNING 2025-03-02 16:54:13,571 log 33857 6188986368 Not Found: /api/api/users/me/
+WARNING 2025-03-02 16:54:13,571 basehttp 33857 6188986368 "GET /api/api/users/me/ HTTP/1.1" 404 2362
+INFO 2025-03-02 16:54:34,945 logger 33857 6188986368 HTTP Request: {"timestamp": "2025-03-02T16:54:34.944907+00:00", "method": "GET", "path": "/api/api/users/me/", "status_code": 404, "execution_time": 0.002705, "user_id": null}
+WARNING 2025-03-02 16:54:34,945 log 33857 6188986368 Not Found: /api/api/users/me/
+WARNING 2025-03-02 16:54:34,946 basehttp 33857 6188986368 "GET /api/api/users/me/ HTTP/1.1" 404 2362
+INFO 2025-03-02 16:54:42,098 logger 33857 6188986368 HTTP Request: {"timestamp": "2025-03-02T16:54:42.097997+00:00", "method": "GET", "path": "/api/api/users/me/", "status_code": 404, "execution_time": 0.008469, "user_id": null}
+WARNING 2025-03-02 16:54:42,099 log 33857 6188986368 Not Found: /api/api/users/me/
+WARNING 2025-03-02 16:54:42,100 basehttp 33857 6188986368 "GET /api/api/users/me/ HTTP/1.1" 404 2362
+INFO 2025-03-02 16:55:34,904 logger 33857 6188986368 HTTP Request: {"timestamp": "2025-03-02T16:55:34.903768+00:00", "method": "GET", "path": "/api/api/users/me/", "status_code": 404, "execution_time": 0.003825, "user_id": null}
+WARNING 2025-03-02 16:55:34,905 log 33857 6188986368 Not Found: /api/api/users/me/
+WARNING 2025-03-02 16:55:34,905 basehttp 33857 6188986368 "GET /api/api/users/me/ HTTP/1.1" 404 2362
+INFO 2025-03-02 16:55:48,551 logger 33857 6188986368 HTTP Request: {"timestamp": "2025-03-02T16:55:48.550847+00:00", "method": "GET", "path": "/api/api/users/me/", "status_code": 404, "execution_time": 0.003701, "user_id": null}
+WARNING 2025-03-02 16:55:48,552 log 33857 6188986368 Not Found: /api/api/users/me/
+WARNING 2025-03-02 16:55:48,552 basehttp 33857 6188986368 "GET /api/api/users/me/ HTTP/1.1" 404 2362
+INFO 2025-03-02 16:55:55,305 logger 33857 6188986368 HTTP Request: {"timestamp": "2025-03-02T16:55:55.305624+00:00", "method": "PUT", "path": "/api/api/users/me/", "status_code": 404, "execution_time": 0.005487, "user_id": null}
+WARNING 2025-03-02 16:55:55,306 log 33857 6188986368 Not Found: /api/api/users/me/
+WARNING 2025-03-02 16:55:55,306 basehttp 33857 6188986368 "PUT /api/api/users/me/ HTTP/1.1" 404 2362
+INFO 2025-03-02 17:04:12,270 autoreload 34899 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 17:06:19,922 autoreload 35085 8231880768 Watching for file changes with StatReloader
+WARNING 2025-03-02 17:07:43,550 base 35085 6192541696 Session data corrupted
+INFO 2025-03-02 17:07:43,552 logger 35085 6192541696 API Request: {"timestamp": "2025-03-02T17:07:43.537448+00:00", "method": "GET", "path": "/api/users/list/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:07:43,555 logger 35085 6192541696 API Response: {"timestamp": "2025-03-02T17:07:43.555663+00:00", "method": "GET", "path": "/api/users/list/", "status_code": 401, "execution_time": 0.018215, "user_id": null, "data": {"detail": "Authentication credentials were not provided."}}
+INFO 2025-03-02 17:07:43,615 logger 35085 6192541696 HTTP Request: {"timestamp": "2025-03-02T17:07:43.615707+00:00", "method": "GET", "path": "/api/users/list/", "status_code": 401, "execution_time": 0.078919, "user_id": null}
+WARNING 2025-03-02 17:07:43,616 log 35085 6192541696 Unauthorized: /api/users/list/
+WARNING 2025-03-02 17:07:43,616 basehttp 35085 6192541696 "GET /api/users/list/ HTTP/1.1" 401 15243
+WARNING 2025-03-02 17:07:44,844 base 35085 6192541696 Session data corrupted
+INFO 2025-03-02 17:07:44,844 logger 35085 6192541696 HTTP Request: {"timestamp": "2025-03-02T17:07:44.843426+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.022928, "user_id": null}
+WARNING 2025-03-02 17:07:44,844 log 35085 6192541696 Not Found: /favicon.ico
+WARNING 2025-03-02 17:07:44,844 basehttp 35085 6192541696 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:07:45,644 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:07:45.643937+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.00596, "user_id": null}
+WARNING 2025-03-02 17:07:45,644 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:07:45,644 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:07:45,682 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:07:45.682752+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.002913, "user_id": null}
+WARNING 2025-03-02 17:07:45,682 log 35085 6226194432 Not Found: /favicon.ico
+WARNING 2025-03-02 17:07:45,683 basehttp 35085 6226194432 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:07:45,690 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:07:45.690238+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.002513, "user_id": null}
+WARNING 2025-03-02 17:07:45,690 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:07:45,691 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:07:53,716 base 35085 6192541696 Session data corrupted
+INFO 2025-03-02 17:07:53,717 logger 35085 6192541696 HTTP Request: {"timestamp": "2025-03-02T17:07:53.713083+00:00", "method": "GET", "path": "/api/", "status_code": 404, "execution_time": 0.007133, "user_id": null}
+WARNING 2025-03-02 17:07:53,717 log 35085 6192541696 Not Found: /api/
+WARNING 2025-03-02 17:07:53,717 basehttp 35085 6192541696 "GET /api/ HTTP/1.1" 404 2323
+INFO 2025-03-02 17:07:54,917 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:07:54.917005+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.005119, "user_id": null}
+WARNING 2025-03-02 17:07:54,917 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:07:54,917 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:07:54,923 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:07:54.923612+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.004368, "user_id": null}
+WARNING 2025-03-02 17:07:54,923 log 35085 6226194432 Not Found: /favicon.ico
+WARNING 2025-03-02 17:07:54,924 basehttp 35085 6226194432 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:07:54,927 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:07:54.927061+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001695, "user_id": null}
+WARNING 2025-03-02 17:07:54,927 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:07:54,927 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:08:00,022 base 35085 6192541696 Session data corrupted
+INFO 2025-03-02 17:08:00,022 logger 35085 6192541696 HTTP Request: {"timestamp": "2025-03-02T17:08:00.020079+00:00", "method": "GET", "path": "/api/users", "status_code": 404, "execution_time": 0.004769, "user_id": null}
+INFO 2025-03-02 17:08:00,023 basehttp 35085 6192541696 "GET /api/users HTTP/1.1" 301 0
+WARNING 2025-03-02 17:08:00,027 base 35085 6209368064 Session data corrupted
+INFO 2025-03-02 17:08:00,027 logger 35085 6209368064 API Request: {"timestamp": "2025-03-02T17:08:00.026058+00:00", "method": "GET", "path": "/api/users/", "query_params": {}, "data": null, "user_id": null}
+ERROR 2025-03-02 17:08:00,038 logger 35085 6209368064 API Exception: {"timestamp": "2025-03-02T17:08:00.031044+00:00", "method": "GET", "path": "/api/users/", "execution_time": 0.004986, "user_id": null, "exception": "badly formed hexadecimal UUID string", "traceback": "Traceback (most recent call last):\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py\", line 81, in wrapper\n    response = func(self, request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/views.py\", line 18, in dispatch\n    return super().dispatch(request, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 509, in dispatch\n    response = self.handle_exception(exc)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 469, in handle_exception\n    self.raise_uncaught_exception(exc)\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 480, in raise_uncaught_exception\n    raise exc\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/views.py\", line 93, in list\n    page = self.paginate_queryset(queryset)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/generics.py\", line 171, in paginate_queryset\n    return self.paginator.paginate_queryset(queryset, self.request, view=self)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/pagination.py\", line 216, in paginate_queryset\n    return list(self.page)\n           ^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/paginator.py\", line 174, in __len__\n    return len(self.object_list)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py\", line 380, in __len__\n    self._fetch_all()\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py\", line 1881, in _fetch_all\n    self._result_cache = list(self._iterable_class(self))\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py\", line 121, in __iter__\n    for row in compiler.results_iter(results):\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/sql/compiler.py\", line 1498, in apply_converters\n    value = converter(value, expression, connection)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/backends/sqlite3/operations.py\", line 356, in convert_uuidfield_value\n    value = uuid.UUID(value)\n            ^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/uuid.py\", line 178, in __init__\n    raise ValueError('badly formed hexadecimal UUID string')\nValueError: badly formed hexadecimal UUID string\n"}
+ERROR 2025-03-02 17:08:00,063 log 35085 6209368064 Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 81, in wrapper
+    response = func(self, request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/views.py", line 18, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/views.py", line 93, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/paginator.py", line 174, in __len__
+    return len(self.object_list)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py", line 121, in __iter__
+    for row in compiler.results_iter(results):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1498, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/backends/sqlite3/operations.py", line 356, in convert_uuidfield_value
+    value = uuid.UUID(value)
+            ^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+INFO 2025-03-02 17:08:00,064 logger 35085 6209368064 HTTP Request: {"timestamp": "2025-03-02T17:08:00.064685+00:00", "method": "GET", "path": "/api/users/", "status_code": 500, "execution_time": 0.038802, "user_id": null}
+ERROR 2025-03-02 17:08:00,064 basehttp 35085 6209368064 "GET /api/users/ HTTP/1.1" 500 158838
+INFO 2025-03-02 17:08:01,243 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:01.243115+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.005105, "user_id": null}
+WARNING 2025-03-02 17:08:01,243 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:08:01,243 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:08:01,248 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:01.248366+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.003025, "user_id": null}
+WARNING 2025-03-02 17:08:01,248 log 35085 6226194432 Not Found: /favicon.ico
+WARNING 2025-03-02 17:08:01,248 basehttp 35085 6226194432 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:08:01,251 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:01.251784+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001864, "user_id": null}
+WARNING 2025-03-02 17:08:01,251 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:08:01,252 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:08:06,034 base 35085 6209368064 Session data corrupted
+INFO 2025-03-02 17:08:06,035 logger 35085 6209368064 API Request: {"timestamp": "2025-03-02T17:08:06.024397+00:00", "method": "GET", "path": "/api/users/", "query_params": {}, "data": null, "user_id": null}
+ERROR 2025-03-02 17:08:06,039 logger 35085 6209368064 API Exception: {"timestamp": "2025-03-02T17:08:06.038328+00:00", "method": "GET", "path": "/api/users/", "execution_time": 0.013931, "user_id": null, "exception": "badly formed hexadecimal UUID string", "traceback": "Traceback (most recent call last):\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py\", line 81, in wrapper\n    response = func(self, request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/views.py\", line 18, in dispatch\n    return super().dispatch(request, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 509, in dispatch\n    response = self.handle_exception(exc)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 469, in handle_exception\n    self.raise_uncaught_exception(exc)\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 480, in raise_uncaught_exception\n    raise exc\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/views.py\", line 93, in list\n    page = self.paginate_queryset(queryset)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/generics.py\", line 171, in paginate_queryset\n    return self.paginator.paginate_queryset(queryset, self.request, view=self)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/pagination.py\", line 216, in paginate_queryset\n    return list(self.page)\n           ^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/paginator.py\", line 174, in __len__\n    return len(self.object_list)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py\", line 380, in __len__\n    self._fetch_all()\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py\", line 1881, in _fetch_all\n    self._result_cache = list(self._iterable_class(self))\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py\", line 121, in __iter__\n    for row in compiler.results_iter(results):\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/sql/compiler.py\", line 1498, in apply_converters\n    value = converter(value, expression, connection)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/backends/sqlite3/operations.py\", line 356, in convert_uuidfield_value\n    value = uuid.UUID(value)\n            ^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/uuid.py\", line 178, in __init__\n    raise ValueError('badly formed hexadecimal UUID string')\nValueError: badly formed hexadecimal UUID string\n"}
+ERROR 2025-03-02 17:08:06,079 log 35085 6209368064 Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 81, in wrapper
+    response = func(self, request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/views.py", line 18, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/views.py", line 93, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    return list(self.page)
+           ^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/paginator.py", line 174, in __len__
+    return len(self.object_list)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/query.py", line 121, in __iter__
+    for row in compiler.results_iter(results):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1498, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/db/backends/sqlite3/operations.py", line 356, in convert_uuidfield_value
+    value = uuid.UUID(value)
+            ^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+INFO 2025-03-02 17:08:06,080 logger 35085 6209368064 HTTP Request: {"timestamp": "2025-03-02T17:08:06.080388+00:00", "method": "GET", "path": "/api/users/", "status_code": 500, "execution_time": 0.060052, "user_id": null}
+ERROR 2025-03-02 17:08:06,080 basehttp 35085 6209368064 "GET /api/users/ HTTP/1.1" 500 158838
+INFO 2025-03-02 17:08:07,335 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:07.334909+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.004712, "user_id": null}
+WARNING 2025-03-02 17:08:07,335 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:08:07,335 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:08:07,341 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:07.341918+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.004944, "user_id": null}
+WARNING 2025-03-02 17:08:07,342 log 35085 6226194432 Not Found: /favicon.ico
+WARNING 2025-03-02 17:08:07,342 basehttp 35085 6226194432 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:08:07,345 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:07.345324+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001801, "user_id": null}
+WARNING 2025-03-02 17:08:07,345 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:08:07,345 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:08:22,155 base 35085 6209368064 Session data corrupted
+INFO 2025-03-02 17:08:22,156 logger 35085 6209368064 HTTP Request: {"timestamp": "2025-03-02T17:08:22.152521+00:00", "method": "GET", "path": "/api/", "status_code": 404, "execution_time": 0.008662, "user_id": null}
+WARNING 2025-03-02 17:08:22,156 log 35085 6209368064 Not Found: /api/
+WARNING 2025-03-02 17:08:22,157 basehttp 35085 6209368064 "GET /api/ HTTP/1.1" 404 2323
+INFO 2025-03-02 17:08:23,339 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:23.339017+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.00479, "user_id": null}
+WARNING 2025-03-02 17:08:23,339 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:08:23,339 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:08:23,343 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:23.343346+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.002023, "user_id": null}
+WARNING 2025-03-02 17:08:23,343 log 35085 6226194432 Not Found: /favicon.ico
+WARNING 2025-03-02 17:08:23,343 basehttp 35085 6226194432 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:08:23,346 logger 35085 6226194432 HTTP Request: {"timestamp": "2025-03-02T17:08:23.346526+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001701, "user_id": null}
+WARNING 2025-03-02 17:08:23,346 log 35085 6226194432 Not Found: /
+WARNING 2025-03-02 17:08:23,346 basehttp 35085 6226194432 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:11:29,007 autoreload 35085 8231880768 /Users/shizhou/2025/DRFAPICursor/users/models.py changed, reloading.
+INFO 2025-03-02 17:11:29,414 autoreload 35452 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 17:13:03,218 autoreload 35704 8231880768 Watching for file changes with StatReloader
+WARNING 2025-03-02 17:14:01,354 base 35704 6193098752 Session data corrupted
+INFO 2025-03-02 17:14:01,355 logger 35704 6193098752 API Request: {"timestamp": "2025-03-02T17:14:01.327633+00:00", "method": "GET", "path": "/api/users/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:14:01,364 logger 35704 6193098752 API Response: {"timestamp": "2025-03-02T17:14:01.364070+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.036437, "user_id": null, "data": {"count": 2, "next": null, "previous": null, "results": [{"id": "e10c923e-0575-42c9-bd46-360eefd0dafd", "email": "751077703@qq.com", "username": "luar", "phone": "00000000000", "bio": null, "avatar": null, "created_at": "2025-03-02 15:12:51", "updated_at": "2025-03-02 15:12:51", "is_active": true, "is_deleted": false, "deleted_at": null}, {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}]}}
+INFO 2025-03-02 17:14:01,531 logger 35704 6193098752 HTTP Request: {"timestamp": "2025-03-02T17:14:01.531657+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.205804, "user_id": null}
+INFO 2025-03-02 17:14:01,532 basehttp 35704 6193098752 "GET /api/users/ HTTP/1.1" 200 16541
+INFO 2025-03-02 17:14:03,220 logger 35704 6226751488 HTTP Request: {"timestamp": "2025-03-02T17:14:03.219865+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.017873, "user_id": null}
+WARNING 2025-03-02 17:14:03,221 log 35704 6226751488 Not Found: /
+WARNING 2025-03-02 17:14:03,221 basehttp 35704 6226751488 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:14:03,237 logger 35704 6226751488 HTTP Request: {"timestamp": "2025-03-02T17:14:03.237451+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.007998, "user_id": null}
+WARNING 2025-03-02 17:14:03,237 log 35704 6226751488 Not Found: /favicon.ico
+WARNING 2025-03-02 17:14:03,237 basehttp 35704 6226751488 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:14:03,241 logger 35704 6226751488 HTTP Request: {"timestamp": "2025-03-02T17:14:03.241615+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001885, "user_id": null}
+WARNING 2025-03-02 17:14:03,241 log 35704 6226751488 Not Found: /
+WARNING 2025-03-02 17:14:03,241 basehttp 35704 6226751488 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:14:49,876 autoreload 35843 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 17:19:47,387 logger 35843 6162345984 API Request: {"timestamp": "2025-03-02T17:19:47.386447+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 17:19:47,679 sms 35843 6162345984 短信验证码发送成功: 13909282921, 验证码: 903412
+INFO 2025-03-02 17:19:47,682 logger 35843 6162345984 API Response: {"timestamp": "2025-03-02T17:19:47.682135+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.295688, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 17:19:47,682 logger 35843 6162345984 HTTP Request: {"timestamp": "2025-03-02T17:19:47.682491+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.298159, "user_id": null}
+INFO 2025-03-02 17:19:47,682 basehttp 35843 6162345984 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 17:20:01,970 logger 35843 6162345984 API Request: {"timestamp": "2025-03-02T17:20:01.970044+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "903412"}, "user_id": null}
+INFO 2025-03-02 17:20:02,113 logger 35843 6162345984 API Response: {"timestamp": "2025-03-02T17:20:02.112988+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.142944, "user_id": null, "data": {"code": 200, "message": "操作成功", "data": {"user": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}, "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTU0MDgwMiwiaWF0IjoxNzQwOTM2MDAyLCJqdGkiOiJjMDdlOWM0NTVkZTk0NThkOGQ5OTg0MGU4ZjZhY2JhMSIsInVzZXJfaWQiOiJjYmRlOWYxYS0xODUyLTRlMGYtYTE5OS1lZjA3OTA2NDQyNTMifQ.IUESlT9NwMgKCXQdBf2Mr7PsmrebIz_nk7Egw7WlVvU", "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMDIyNDAyLCJpYXQiOjE3NDA5MzYwMDIsImp0aSI6ImE4YzNhZDI2MDA1YjQwYjc4ZDlhZDk4N2JmMzdlM2RiIiwidXNlcl9pZCI6ImNiZGU5ZjFhLTE4NTItNGUwZi1hMTk5LWVmMDc5MDY0NDI1MyJ9.wpIhE9McsYe-LIDPxH4J63aw2py5oZXqkaEw8j5dyu4"}}}
+INFO 2025-03-02 17:20:02,113 logger 35843 6162345984 HTTP Request: {"timestamp": "2025-03-02T17:20:02.113270+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.144427, "user_id": null}
+INFO 2025-03-02 17:20:02,113 basehttp 35843 6162345984 "POST /api/users/sms/login/ HTTP/1.1" 200 886
+INFO 2025-03-02 17:21:33,657 autoreload 36392 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 17:21:39,308 autoreload 36439 8231880768 Watching for file changes with StatReloader
+INFO 2025-03-02 17:21:51,082 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:21:51.082294+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 17:21:51,368 sms 36439 6129152000 短信验证码发送成功: 13909282921, 验证码: 069822
+INFO 2025-03-02 17:21:51,369 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:21:51.369306+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.287012, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 17:21:51,369 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:21:51.369496+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.28894, "user_id": null}
+INFO 2025-03-02 17:21:51,369 basehttp 36439 6129152000 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 17:22:02,285 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:22:02.284458+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "069822"}, "user_id": null}
+INFO 2025-03-02 17:22:02,360 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:22:02.360766+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.076308, "user_id": null, "data": {"code": 200, "message": "操作成功", "data": {"user": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}, "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTU0MDkyMiwiaWF0IjoxNzQwOTM2MTIyLCJqdGkiOiI1OWE2OGY1ZDRkYzU0ZjcxOWUyYzE2NDIwMjg1OTU4OSIsInVzZXJfaWQiOiJjYmRlOWYxYS0xODUyLTRlMGYtYTE5OS1lZjA3OTA2NDQyNTMifQ.N1QqyU3o1dTkBscRefZLEmzXMtErDM86soVhsWEr6mY", "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMDIyNTIyLCJpYXQiOjE3NDA5MzYxMjIsImp0aSI6ImQzOGQzMDQ3NDc0NzRkZjA5YjE5YTdlY2Y3YzcwNGU5IiwidXNlcl9pZCI6ImNiZGU5ZjFhLTE4NTItNGUwZi1hMTk5LWVmMDc5MDY0NDI1MyJ9.GfYTTKSF3R5Aqrr9aGsK2-Fgf-Ayy-yXqf7E4NdJ6DI"}}}
+INFO 2025-03-02 17:22:02,361 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:22:02.361136+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.078883, "user_id": null}
+INFO 2025-03-02 17:22:02,361 basehttp 36439 6129152000 "POST /api/users/sms/login/ HTTP/1.1" 200 886
+INFO 2025-03-02 17:23:20,811 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:23:20.810954+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 17:23:21,078 sms 36439 6129152000 短信验证码发送成功: 13909282921, 验证码: 224987
+INFO 2025-03-02 17:23:21,080 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:23:21.080310+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.269356, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 17:23:21,080 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:23:21.080561+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.270405, "user_id": null}
+INFO 2025-03-02 17:23:21,080 basehttp 36439 6129152000 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 17:23:34,454 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:23:34.454021+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "224987"}, "user_id": null}
+INFO 2025-03-02 17:23:34,510 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:23:34.510675+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.056654, "user_id": null, "data": {"code": 200, "message": "操作成功", "data": {"user": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}, "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTU0MTAxNCwiaWF0IjoxNzQwOTM2MjE0LCJqdGkiOiJlZTA1Mzk3ZjBhYTQ0MTNmODhhNzljZGY2MmVhN2I0ZCIsInVzZXJfaWQiOiJjYmRlOWYxYS0xODUyLTRlMGYtYTE5OS1lZjA3OTA2NDQyNTMifQ.3VKnRyMEIasYcJX-UtU__QT2GnXWsX1UPSmswU66dpk", "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMDIyNjE0LCJpYXQiOjE3NDA5MzYyMTQsImp0aSI6IjQyNjViYmJjZjE1MjRlZThiY2Y2ZTZjY2FlMDM3MDllIiwidXNlcl9pZCI6ImNiZGU5ZjFhLTE4NTItNGUwZi1hMTk5LWVmMDc5MDY0NDI1MyJ9.iYYdhBWcbAUU41LSFMfO6LWabbMAK8ub31-PVM_-HG8"}}}
+INFO 2025-03-02 17:23:34,513 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:23:34.513122+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.060195, "user_id": null}
+INFO 2025-03-02 17:23:34,516 basehttp 36439 6129152000 "POST /api/users/sms/login/ HTTP/1.1" 200 886
+INFO 2025-03-02 17:25:48,962 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:25:48.960451+00:00", "method": "POST", "path": "/api/users/sms/send/", "query_params": {}, "data": {"phone": "13909282921"}, "user_id": null}
+INFO 2025-03-02 17:25:49,322 sms 36439 6129152000 短信验证码发送成功: 13909282921, 验证码: 633380
+INFO 2025-03-02 17:25:49,324 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:25:49.324782+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.364331, "user_id": null, "data": {"code": 200, "message": "验证码发送成功"}}
+INFO 2025-03-02 17:25:49,325 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:25:49.325224+00:00", "method": "POST", "path": "/api/users/sms/send/", "status_code": 200, "execution_time": 0.366906, "user_id": null}
+INFO 2025-03-02 17:25:49,325 basehttp 36439 6129152000 "POST /api/users/sms/send/ HTTP/1.1" 200 46
+INFO 2025-03-02 17:26:13,508 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:26:13.508581+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "633380"}, "user_id": null}
+INFO 2025-03-02 17:26:13,525 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:26:13.525659+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.017078, "user_id": null, "data": {"code": 200, "message": "操作成功", "data": {"user": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}, "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTU0MTE3MywiaWF0IjoxNzQwOTM2MzczLCJqdGkiOiJjMDg3Yjc0MTI5ZjY0NTJlOGI0ODE0NGMxYjMxNTA1MyIsInVzZXJfaWQiOiJjYmRlOWYxYS0xODUyLTRlMGYtYTE5OS1lZjA3OTA2NDQyNTMifQ.uZ5eQTUbuvFs5vGUo57cjIEHqRlbBLvm7kp8yxac5qc", "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMDIyNzczLCJpYXQiOjE3NDA5MzYzNzMsImp0aSI6IjhjNjQ4OWEyMGNlZTQ5NGFiYzZjNDI2Nzk5MGUwNjM2IiwidXNlcl9pZCI6ImNiZGU5ZjFhLTE4NTItNGUwZi1hMTk5LWVmMDc5MDY0NDI1MyJ9.srwxLL_gmYZMFqIRXR_9sV7TgsF05KAm_Bwxxi0GQG8"}}}
+INFO 2025-03-02 17:26:13,526 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:26:13.526085+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 200, "execution_time": 0.018532, "user_id": null}
+INFO 2025-03-02 17:26:13,526 basehttp 36439 6129152000 "POST /api/users/sms/login/ HTTP/1.1" 200 886
+INFO 2025-03-02 17:26:13,548 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:26:13.548528+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:26:13,551 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:26:13.551070+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.002542, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "data": {"code": 200, "message": "操作成功", "data": {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}}}
+INFO 2025-03-02 17:26:13,551 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:26:13.551241+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 200, "execution_time": 0.002843, "user_id": "cbde9f1a-1852-4e0f-a199-ef0790644253"}
+INFO 2025-03-02 17:26:13,551 basehttp 36439 6129152000 "GET /api/users/me/ HTTP/1.1" 200 296
+INFO 2025-03-02 17:26:17,097 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:26:17.097318+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "633389"}, "user_id": null}
+INFO 2025-03-02 17:26:17,098 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:26:17.098712+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 400, "execution_time": 0.001394, "user_id": null, "data": {"code": 400, "message": {"non_field_errors": ["验证码错误或已过期"]}}}
+INFO 2025-03-02 17:26:17,099 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:26:17.099087+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 400, "execution_time": 0.001966, "user_id": null}
+WARNING 2025-03-02 17:26:17,099 log 36439 6129152000 Bad Request: /api/users/sms/login/
+WARNING 2025-03-02 17:26:17,100 basehttp 36439 6129152000 "POST /api/users/sms/login/ HTTP/1.1" 400 75
+INFO 2025-03-02 17:26:21,961 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:26:21.961408+00:00", "method": "POST", "path": "/api/users/sms/login/", "query_params": {}, "data": {"phone": "13909282921", "code": "633389"}, "user_id": null}
+INFO 2025-03-02 17:26:21,962 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:26:21.962462+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 400, "execution_time": 0.001054, "user_id": null, "data": {"code": 400, "message": {"non_field_errors": ["验证码错误或已过期"]}}}
+INFO 2025-03-02 17:26:21,962 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:26:21.962738+00:00", "method": "POST", "path": "/api/users/sms/login/", "status_code": 400, "execution_time": 0.001886, "user_id": null}
+WARNING 2025-03-02 17:26:21,963 log 36439 6129152000 Bad Request: /api/users/sms/login/
+WARNING 2025-03-02 17:26:21,963 basehttp 36439 6129152000 "POST /api/users/sms/login/ HTTP/1.1" 400 75
+WARNING 2025-03-02 17:26:43,189 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:26:43,190 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:26:43.182459+00:00", "method": "GET", "path": "/api/users/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:26:43,195 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:26:43.195476+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.013017, "user_id": null, "data": {"count": 2, "next": null, "previous": null, "results": [{"id": "e10c923e-0575-42c9-bd46-360eefd0dafd", "email": "751077703@qq.com", "username": "luar", "phone": "00000000000", "bio": null, "avatar": null, "created_at": "2025-03-02 15:12:51", "updated_at": "2025-03-02 15:12:51", "is_active": true, "is_deleted": false, "deleted_at": null}, {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}]}}
+INFO 2025-03-02 17:26:43,318 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:26:43.318048+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.135954, "user_id": null}
+INFO 2025-03-02 17:26:43,318 basehttp 36439 6129152000 "GET /api/users/ HTTP/1.1" 200 16541
+INFO 2025-03-02 17:26:44,680 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:26:44.680772+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.007585, "user_id": null}
+WARNING 2025-03-02 17:26:44,680 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:26:44,681 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:26:44,684 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:26:44.684082+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.001652, "user_id": null}
+WARNING 2025-03-02 17:26:44,684 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:26:44,684 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:26:44,687 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:26:44.687510+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.002315, "user_id": null}
+WARNING 2025-03-02 17:26:44,687 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:26:44,687 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:27:58,476 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:27:58,477 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:27:58.467696+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:27:58,482 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:27:58.482627+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 401, "execution_time": 0.014931, "user_id": null, "data": {"detail": "Authentication credentials were not provided."}}
+INFO 2025-03-02 17:27:58,492 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:27:58.492002+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 401, "execution_time": 0.02491, "user_id": null}
+WARNING 2025-03-02 17:27:58,492 log 36439 6129152000 Unauthorized: /api/users/me/
+WARNING 2025-03-02 17:27:58,493 basehttp 36439 6129152000 "GET /api/users/me/ HTTP/1.1" 401 9988
+INFO 2025-03-02 17:27:59,849 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:27:59.849372+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.003529, "user_id": null}
+WARNING 2025-03-02 17:27:59,849 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:27:59,849 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:27:59,852 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:27:59.852823+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.001673, "user_id": null}
+WARNING 2025-03-02 17:27:59,852 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:27:59,853 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:27:59,857 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:27:59.857035+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.002187, "user_id": null}
+WARNING 2025-03-02 17:27:59,857 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:27:59,857 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:28:01,281 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:28:01,281 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:28:01.279244+00:00", "method": "GET", "path": "/api/users/me/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:28:01,282 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:28:01.282185+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 401, "execution_time": 0.002941, "user_id": null, "data": {"detail": "Authentication credentials were not provided."}}
+INFO 2025-03-02 17:28:01,290 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:28:01.289962+00:00", "method": "GET", "path": "/api/users/me/", "status_code": 401, "execution_time": 0.01085, "user_id": null}
+WARNING 2025-03-02 17:28:01,290 log 36439 6129152000 Unauthorized: /api/users/me/
+WARNING 2025-03-02 17:28:01,291 basehttp 36439 6129152000 "GET /api/users/me/ HTTP/1.1" 401 9988
+INFO 2025-03-02 17:28:02,511 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:02.511578+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001975, "user_id": null}
+WARNING 2025-03-02 17:28:02,511 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:02,511 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:02,514 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:02.514774+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.001609, "user_id": null}
+WARNING 2025-03-02 17:28:02,514 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:02,514 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:02,517 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:02.517560+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001641, "user_id": null}
+WARNING 2025-03-02 17:28:02,517 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:02,517 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:04,036 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:04.036385+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.004767, "user_id": null}
+WARNING 2025-03-02 17:28:04,036 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:04,036 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:04,040 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:04.040028+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.001683, "user_id": null}
+WARNING 2025-03-02 17:28:04,040 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:04,040 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:04,043 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:04.043300+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.002189, "user_id": null}
+WARNING 2025-03-02 17:28:04,043 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:04,043 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:28:07,247 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:28:07,247 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:28:07.233884+00:00", "method": "GET", "path": "/api/users/deleted/", "query_params": {}, "data": null, "user_id": null}
+ERROR 2025-03-02 17:28:07,253 logger 36439 6129152000 API Exception: {"timestamp": "2025-03-02T17:28:07.248014+00:00", "method": "GET", "path": "/api/users/deleted/", "execution_time": 0.01413, "user_id": null, "exception": "'CustomUserManager' object has no attribute 'only_deleted'", "traceback": "Traceback (most recent call last):\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py\", line 81, in wrapper\n    response = func(self, request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/views.py\", line 18, in dispatch\n    return super().dispatch(request, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 509, in dispatch\n    response = self.handle_exception(exc)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 469, in handle_exception\n    self.raise_uncaught_exception(exc)\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 480, in raise_uncaught_exception\n    raise exc\n  File \"/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shizhou/2025/DRFAPICursor/users/utils/views.py\", line 152, in deleted\n    queryset = self.get_queryset().model.objects.only_deleted()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'CustomUserManager' object has no attribute 'only_deleted'\n"}
+ERROR 2025-03-02 17:28:07,280 log 36439 6129152000 Internal Server Error: /api/users/deleted/
+Traceback (most recent call last):
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/logger.py", line 81, in wrapper
+    response = func(self, request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/views.py", line 18, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/shizhou/anaconda3/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shizhou/2025/DRFAPICursor/users/utils/views.py", line 152, in deleted
+    queryset = self.get_queryset().model.objects.only_deleted()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomUserManager' object has no attribute 'only_deleted'
+INFO 2025-03-02 17:28:07,282 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:28:07.282410+00:00", "method": "GET", "path": "/api/users/deleted/", "status_code": 500, "execution_time": 0.049053, "user_id": null}
+ERROR 2025-03-02 17:28:07,282 basehttp 36439 6129152000 "GET /api/users/deleted/ HTTP/1.1" 500 109040
+INFO 2025-03-02 17:28:08,450 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:08.450012+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.004692, "user_id": null}
+WARNING 2025-03-02 17:28:08,450 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:08,450 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:08,454 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:08.454836+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.002382, "user_id": null}
+WARNING 2025-03-02 17:28:08,455 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:08,455 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:08,459 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:08.459246+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001687, "user_id": null}
+WARNING 2025-03-02 17:28:08,459 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:08,459 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:12,626 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:12.626341+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.005184, "user_id": null}
+WARNING 2025-03-02 17:28:12,626 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:12,626 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:12,631 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:12.631403+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.003014, "user_id": null}
+WARNING 2025-03-02 17:28:12,631 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:12,631 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:12,634 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:12.634695+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.002149, "user_id": null}
+WARNING 2025-03-02 17:28:12,635 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:12,635 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:28:15,880 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:28:15,881 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:28:15.877759+00:00", "method": "GET", "path": "/api/users/change_password/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:28:15,883 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:28:15.883135+00:00", "method": "GET", "path": "/api/users/change_password/", "status_code": 401, "execution_time": 0.005376, "user_id": null, "data": {"detail": "Authentication credentials were not provided."}}
+INFO 2025-03-02 17:28:15,889 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:28:15.889832+00:00", "method": "GET", "path": "/api/users/change_password/", "status_code": 401, "execution_time": 0.012302, "user_id": null}
+WARNING 2025-03-02 17:28:15,890 log 36439 6129152000 Unauthorized: /api/users/change_password/
+WARNING 2025-03-02 17:28:15,890 basehttp 36439 6129152000 "GET /api/users/change_password/ HTTP/1.1" 401 8768
+INFO 2025-03-02 17:28:16,996 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:16.996932+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.00496, "user_id": null}
+WARNING 2025-03-02 17:28:16,997 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:16,997 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:17,000 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:17.000285+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.00172, "user_id": null}
+WARNING 2025-03-02 17:28:17,000 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:17,000 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:17,003 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:17.003851+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.002534, "user_id": null}
+WARNING 2025-03-02 17:28:17,004 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:17,004 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:18,722 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:18.721895+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.004418, "user_id": null}
+WARNING 2025-03-02 17:28:18,722 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:18,722 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:18,725 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:18.725645+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.001608, "user_id": null}
+WARNING 2025-03-02 17:28:18,725 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:18,725 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:18,728 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:18.728731+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001629, "user_id": null}
+WARNING 2025-03-02 17:28:18,728 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:18,729 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:28:21,584 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:28:21,584 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:28:21.580511+00:00", "method": "GET", "path": "/api/", "status_code": 404, "execution_time": 0.008281, "user_id": null}
+WARNING 2025-03-02 17:28:21,584 log 36439 6129152000 Not Found: /api/
+WARNING 2025-03-02 17:28:21,584 basehttp 36439 6129152000 "GET /api/ HTTP/1.1" 404 2323
+INFO 2025-03-02 17:28:22,792 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:22.792356+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.002658, "user_id": null}
+WARNING 2025-03-02 17:28:22,792 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:22,792 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:22,795 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:22.795650+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.00159, "user_id": null}
+WARNING 2025-03-02 17:28:22,795 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:22,795 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:22,798 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:22.798355+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001502, "user_id": null}
+WARNING 2025-03-02 17:28:22,798 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:22,798 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:28:27,502 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:28:27,502 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:28:27.499311+00:00", "method": "GET", "path": "/api/users/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:28:27,516 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:28:27.516727+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.017416, "user_id": null, "data": {"count": 2, "next": null, "previous": null, "results": [{"id": "e10c923e-0575-42c9-bd46-360eefd0dafd", "email": "751077703@qq.com", "username": "luar", "phone": "00000000000", "bio": null, "avatar": null, "created_at": "2025-03-02 15:12:51", "updated_at": "2025-03-02 15:12:51", "is_active": true, "is_deleted": false, "deleted_at": null}, {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}]}}
+INFO 2025-03-02 17:28:27,530 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:28:27.530769+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.031813, "user_id": null}
+INFO 2025-03-02 17:28:27,531 basehttp 36439 6129152000 "GET /api/users/ HTTP/1.1" 200 16541
+INFO 2025-03-02 17:28:28,700 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:28.700445+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.004008, "user_id": null}
+WARNING 2025-03-02 17:28:28,701 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:28,701 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:28,705 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:28.705844+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.001853, "user_id": null}
+WARNING 2025-03-02 17:28:28,706 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:28,706 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:28,709 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:28.709530+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001709, "user_id": null}
+WARNING 2025-03-02 17:28:28,709 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:28,709 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:28:33,629 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:28:33,629 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:28:33.604636+00:00", "method": "GET", "path": "/api/users/", "query_params": {}, "data": null, "user_id": null}
+INFO 2025-03-02 17:28:33,637 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:28:33.637106+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.03247, "user_id": null, "data": {"count": 2, "next": null, "previous": null, "results": [{"id": "e10c923e-0575-42c9-bd46-360eefd0dafd", "email": "751077703@qq.com", "username": "luar", "phone": "00000000000", "bio": null, "avatar": null, "created_at": "2025-03-02 15:12:51", "updated_at": "2025-03-02 15:12:51", "is_active": true, "is_deleted": false, "deleted_at": null}, {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}]}}
+INFO 2025-03-02 17:28:33,667 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:28:33.667018+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.06351, "user_id": null}
+INFO 2025-03-02 17:28:33,668 basehttp 36439 6129152000 "GET /api/users/ HTTP/1.1" 200 16541
+INFO 2025-03-02 17:28:34,989 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:34.989120+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.006405, "user_id": null}
+WARNING 2025-03-02 17:28:34,989 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:34,989 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:34,992 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:34.992670+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.001686, "user_id": null}
+WARNING 2025-03-02 17:28:34,992 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:34,992 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:34,995 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:34.995442+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001708, "user_id": null}
+WARNING 2025-03-02 17:28:34,995 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:34,995 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+WARNING 2025-03-02 17:28:41,802 base 36439 6129152000 Session data corrupted
+INFO 2025-03-02 17:28:41,804 logger 36439 6129152000 API Request: {"timestamp": "2025-03-02T17:28:41.792242+00:00", "method": "GET", "path": "/api/users/", "query_params": {"format": ["json"]}, "data": null, "user_id": null}
+INFO 2025-03-02 17:28:41,809 logger 36439 6129152000 API Response: {"timestamp": "2025-03-02T17:28:41.809496+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.017254, "user_id": null, "data": {"count": 2, "next": null, "previous": null, "results": [{"id": "e10c923e-0575-42c9-bd46-360eefd0dafd", "email": "751077703@qq.com", "username": "luar", "phone": "00000000000", "bio": null, "avatar": null, "created_at": "2025-03-02 15:12:51", "updated_at": "2025-03-02 15:12:51", "is_active": true, "is_deleted": false, "deleted_at": null}, {"id": "cbde9f1a-1852-4e0f-a199-ef0790644253", "email": null, "username": "f4023ec7", "phone": "13909282921", "bio": null, "avatar": null, "created_at": "2025-03-02 16:16:37", "updated_at": "2025-03-02 16:16:37", "is_active": true, "is_deleted": false, "deleted_at": null}]}}
+INFO 2025-03-02 17:28:41,810 logger 36439 6129152000 HTTP Request: {"timestamp": "2025-03-02T17:28:41.810213+00:00", "method": "GET", "path": "/api/users/", "status_code": 200, "execution_time": 0.018986, "user_id": null}
+INFO 2025-03-02 17:28:41,814 basehttp 36439 6129152000 "GET /api/users/?format=json HTTP/1.1" 200 565
+INFO 2025-03-02 17:28:42,975 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:42.975406+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.003263, "user_id": null}
+WARNING 2025-03-02 17:28:42,975 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:42,975 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293
+INFO 2025-03-02 17:28:42,978 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:42.978691+00:00", "method": "GET", "path": "/favicon.ico", "status_code": 404, "execution_time": 0.00155, "user_id": null}
+WARNING 2025-03-02 17:28:42,978 log 36439 6163378176 Not Found: /favicon.ico
+WARNING 2025-03-02 17:28:42,978 basehttp 36439 6163378176 "GET /favicon.ico HTTP/1.1" 404 2344
+INFO 2025-03-02 17:28:42,981 logger 36439 6163378176 HTTP Request: {"timestamp": "2025-03-02T17:28:42.981402+00:00", "method": "GET", "path": "/", "status_code": 404, "execution_time": 0.001517, "user_id": null}
+WARNING 2025-03-02 17:28:42,981 log 36439 6163378176 Not Found: /
+WARNING 2025-03-02 17:28:42,981 basehttp 36439 6163378176 "GET / HTTP/1.1" 404 2293

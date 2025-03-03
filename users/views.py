@@ -9,14 +9,60 @@ from .serializers import (
     UserSerializer, 
     UserCreateSerializer, 
     UserUpdateSerializer,
-    ChangePasswordSerializer
+    ChangePasswordSerializer,
+    PhoneSerializer,
+    SMSVerificationSerializer,
+    SMSLoginSerializer
 )
 from .utils.views import SoftDeleteViewSet
 from .utils.permissions import IsSelf, IsAdminUserOrReadOnly
 from .utils.response import success_response, error_response
 from .utils.logger import api_logger
+from .utils.sms import SMSUtil
 
 User = get_user_model()
+
+class SMSVerificationView(APIView):
+    """
+    短信验证码视图
+    """
+    permission_classes = [AllowAny]
+    
+    @api_logger
+    def post(self, request):
+        """
+        发送短信验证码
+        """
+        serializer = PhoneSerializer(data=request.data)
+        if serializer.is_valid():
+            phone = serializer.validated_data['phone']
+            success, message = SMSUtil.send_verification_code(phone)
+            if success:
+                return success_response(msg=message)
+            return error_response(msg=message)
+        return error_response(msg=serializer.errors)
+
+class SMSLoginView(APIView):
+    """
+    短信验证码登录视图
+    """
+    permission_classes = [AllowAny]
+    
+    @api_logger
+    def post(self, request):
+        """
+        短信验证码登录
+        """
+        serializer = SMSLoginSerializer(data=request.data)
+        if serializer.is_valid():
+            result = serializer.validated_data
+            user_serializer = UserSerializer(result['user'])
+            return success_response(data={
+                'user': user_serializer.data,
+                'refresh': result['refresh'],
+                'access': result['access']
+            })
+        return error_response(msg=serializer.errors)
 
 class UserViewSet(SoftDeleteViewSet):
     """

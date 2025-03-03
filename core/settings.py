@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+# 加载环境变量
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,13 +25,27 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-2sy*)2bpbow@$cvbss2^zi)h3zr_1n62--n(n*41yggb@ik@n7"
+SECRET_KEY = os.getenv('SECRET_KEY', "django-insecure-2sy*)2bpbow@$cvbss2^zi)h3zr_1n62--n(n*41yggb@ik@n7")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',') if os.getenv('ALLOWED_HOSTS') else []
 
+# 腾讯云短信配置
+TENCENT_CLOUD_SMS = {
+    'SECRET_ID': os.getenv('TENCENT_CLOUD_SMS_SECRET_ID'),
+    'SECRET_KEY': os.getenv('TENCENT_CLOUD_SMS_SECRET_KEY'),
+    'APP_ID': os.getenv('TENCENT_CLOUD_SMS_APP_ID'),
+    'SIGN_NAME': os.getenv('TENCENT_CLOUD_SMS_SIGN_NAME'),
+    'TEMPLATE_ID': os.getenv('TENCENT_CLOUD_SMS_TEMPLATE_ID'),
+}
+
+# 验证码有效期（分钟）
+SMS_CODE_EXPIRE_MINUTES = 5
+
+# 验证码缓存键前缀
+SMS_CODE_CACHE_PREFIX = 'sms_code_'
 
 # Application definition
 

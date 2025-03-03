@@ -2,6 +2,11 @@ from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
 from .utils.serializers import SoftDeleteModelSerializer, DynamicFieldsModelSerializer
+from django.utils.translation import gettext_lazy as _
+from rest_framework_simplejwt.tokens import RefreshToken
+from users.utils.sms import SMSUtil
+import re
+import uuid
 
 User = get_user_model()
 
@@ -54,4 +59,75 @@ class ChangePasswordSerializer(serializers.Serializer):
     def validate(self, attrs):
         if attrs['new_password'] != attrs['new_password2']:
             raise serializers.ValidationError({"new_password": "两次新密码不匹配"})
-        return attrs 
+        return attrs
+
+class PhoneSerializer(serializers.Serializer):
+    """
+    手机号序列化器，用于发送验证码
+    """
+    phone = serializers.CharField(max_length=11, min_length=11)
+    
+    def validate_phone(self, value):
+        """
+        验证手机号格式
+        """
+        if not re.match(r'^1[3-9]\d{9}$', value):
+            raise serializers.ValidationError(_("手机号格式不正确"))
+        return value
+
+class SMSVerificationSerializer(serializers.Serializer):
+    """
+    短信验证码序列化器，用于验证短信验证码
+    """
+    phone = serializers.CharField(max_length=11, min_length=11)
+    code = serializers.CharField(max_length=6, min_length=6)
+    
+    def validate_phone(self, value):
+        """
+        验证手机号格式
+        """
+        if not re.match(r'^1[3-9]\d{9}$', value):
+            raise serializers.ValidationError(_("手机号格式不正确"))
+        return value
+    
+    def validate(self, attrs):
+        """
+        验证短信验证码
+        """
+        phone = attrs.get('phone')
+        code = attrs.get('code')
+        
+        if not SMSUtil.verify_code(phone, code):
+            raise serializers.ValidationError(_("验证码错误或已过期"))
+        
+        return attrs
+
+class SMSLoginSerializer(SMSVerificationSerializer):
+    """
+    短信验证码登录序列化器
+    """
+    def validate(self, attrs):
+        """
+        验证短信验证码并返回用户信息和token
+        """
+        attrs = super().validate(attrs)
+        phone = attrs.get('phone')
+        
+        try:
+            user = User.objects.get(phone=phone)
+        except User.DoesNotExist:
+            # 如果用户不存在，则创建一个新用户
+            user = User.objects.create_user(
+                phone=phone,
+                username=str(uuid.uuid4())[:8],  # 使用UUID生成用户名
+                password=None  # 不设置密码，只能通过短信验证码登录
+            )
+        
+        # 生成JWT令牌
+        refresh = RefreshToken.for_user(user)
+        
+        return {
+            'user': user,
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        } 

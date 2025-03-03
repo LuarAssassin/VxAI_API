@@ -1,0 +1,330 @@
+# 短信验证码登录接口说明
+
+本文档详细说明了短信验证码发送和登录接口的使用方法，供前端开发人员参考。
+
+## 基本信息
+
+- 基础URL: `http://localhost:8000/api/users/`
+- 所有请求和响应均使用JSON格式
+- 认证方式: JWT令牌（Bearer Token）
+
+## 统一响应格式
+
+所有API响应均遵循以下格式：
+
+```json
+{
+  "code": 200,       // 业务状态码，200表示成功，其他值表示错误
+  "message": "操作成功", // 响应消息
+  "data": {}         // 响应数据，可能为对象、数组或null
+}
+```
+
+## 1. 发送短信验证码
+
+### 请求信息
+
+- URL: `/sms/send/`
+- 方法: `POST`
+- 认证: 不需要认证
+
+### 请求参数
+
+```json
+{
+  "phone": "13800138000"  // 手机号，必须是11位中国大陆手机号
+}
+```
+
+### 响应示例
+
+成功响应:
+
+```json
+{
+  "code": 200,
+  "message": "验证码发送成功",
+  "data": null
+}
+```
+
+错误响应:
+
+```json
+{
+  "code": 400,
+  "message": "手机号格式不正确",
+  "data": null
+}
+```
+
+或
+
+```json
+{
+  "code": 400,
+  "message": "验证码发送失败，请稍后重试",
+  "data": null
+}
+```
+
+### 注意事项
+
+- 验证码有效期为5分钟
+- 同一手机号短时间内请求次数可能会受到限制
+- 前端应该有倒计时功能，防止用户频繁点击发送按钮
+
+## 2. 短信验证码登录/注册
+
+### 请求信息
+
+- URL: `/sms/login/`
+- 方法: `POST`
+- 认证: 不需要认证
+
+### 请求参数
+
+```json
+{
+  "phone": "13800138000",  // 手机号，必须是11位中国大陆手机号
+  "code": "123456"         // 验证码，6位数字
+}
+```
+
+### 响应示例
+
+成功响应:
+
+```json
+{
+  "code": 200,
+  "message": "操作成功",
+  "data": {
+    "user": {
+      "id": "e10c923e-0575-42c9-bd46-360eefd0dafd",  // UUID格式的用户ID
+      "username": "a1b2c3d4",
+      "phone": "13800138000",
+      "email": null,
+      "bio": null,
+      "avatar": null,
+      "created_at": "2023-01-01 12:00:00",
+      "updated_at": "2023-01-01 12:00:00",
+      "is_active": true,
+      "is_deleted": false,
+      "deleted_at": null
+    },
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...",  // 刷新令牌
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..."    // 访问令牌
+  }
+}
+```
+
+错误响应:
+
+```json
+{
+  "code": 400,
+  "message": "验证码错误或已过期",
+  "data": null
+}
+```
+
+或
+
+```json
+{
+  "code": 400,
+  "message": "手机号格式不正确",
+  "data": null
+}
+```
+
+### 注意事项
+
+- 如果用户不存在，系统会自动创建一个新用户，用户名为随机生成的UUID
+- 验证码验证成功后会立即失效，不能重复使用
+- 返回的access令牌用于后续API请求的认证
+- refresh令牌用于在access令牌过期后获取新的access令牌
+- 用户ID使用标准的UUID格式（例如：e10c923e-0575-42c9-bd46-360eefd0dafd）
+
+## 3. 刷新令牌
+
+### 请求信息
+
+- URL: `/token/refresh/`
+- 方法: `POST`
+- 认证: 不需要认证
+
+### 请求参数
+
+```json
+{
+  "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..."  // 刷新令牌
+}
+```
+
+### 响应示例
+
+成功响应:
+
+```json
+{
+  "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..."  // 新的访问令牌
+}
+```
+
+错误响应:
+
+```json
+{
+  "code": 401,
+  "message": "令牌无效或已过期",
+  "data": null
+}
+```
+
+## 4. 获取当前用户信息
+
+### 请求信息
+
+- URL: `/me/`
+- 方法: `GET`
+- 认证: 需要认证（Bearer Token）
+
+### 请求头
+
+```
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...
+```
+
+### 响应示例
+
+成功响应:
+
+```json
+{
+  "code": 200,
+  "message": "操作成功",
+  "data": {
+    "id": "e10c923e-0575-42c9-bd46-360eefd0dafd",  // UUID格式的用户ID
+    "username": "a1b2c3d4",
+    "phone": "13800138000",
+    "email": null,
+    "bio": null,
+    "avatar": null,
+    "created_at": "2023-01-01 12:00:00",
+    "updated_at": "2023-01-01 12:00:00",
+    "is_active": true,
+    "is_deleted": false,
+    "deleted_at": null
+  }
+}
+```
+
+错误响应:
+
+```json
+{
+  "code": 401,
+  "message": "认证失败",
+  "data": null
+}
+```
+
+## 5. 获取用户列表
+
+### 请求信息
+
+- URL: `/`
+- 方法: `GET`
+- 认证: 需要认证（Bearer Token）且需要管理员权限
+
+### 请求头
+
+```
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...
+```
+
+### 响应示例
+
+成功响应:
+
+```json
+{
+  "code": 200,
+  "message": "操作成功",
+  "data": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": "e10c923e-0575-42c9-bd46-360eefd0dafd",
+        "username": "luar",
+        "phone": "00000000000",
+        "email": "751077703@qq.com",
+        "bio": null,
+        "avatar": null,
+        "created_at": "2025-03-02 15:12:51",
+        "updated_at": "2025-03-02 15:12:51",
+        "is_active": true,
+        "is_deleted": false,
+        "deleted_at": null
+      },
+      {
+        "id": "cbde9f1a-1852-4e0f-a199-ef0790644253",
+        "username": "f4023ec7",
+        "phone": "13909282921",
+        "email": null,
+        "bio": null,
+        "avatar": null,
+        "created_at": "2025-03-02 16:16:37",
+        "updated_at": "2025-03-02 16:16:37",
+        "is_active": true,
+        "is_deleted": false,
+        "deleted_at": null
+      }
+    ]
+  }
+}
+```
+
+错误响应:
+
+```json
+{
+  "code": 401,
+  "message": "认证失败",
+  "data": null
+}
+```
+
+或
+
+```json
+{
+  "code": 403,
+  "message": "权限不足",
+  "data": null
+}
+```
+
+## 常见问题
+
+1. **Q: 验证码发送后没有收到短信怎么办？**
+   A: 可能是网络问题或手机号输入错误，建议检查手机号并重新发送。如果问题持续存在，可能是短信服务提供商的问题。
+
+2. **Q: 验证码输入正确但登录失败怎么办？**
+   A: 验证码可能已过期（有效期5分钟），建议重新获取验证码。
+
+3. **Q: 如何处理用户注销？**
+   A: 前端只需清除本地存储的令牌和用户信息，无需调用后端API。
+
+4. **Q: 如何更新用户信息？**
+   A: 可以调用`PUT /api/users/{id}/`接口更新用户信息，需要在请求头中包含有效的访问令牌。
+
+5. **Q: 如何处理令牌过期？**
+   A: 当收到401错误时，应尝试使用刷新令牌获取新的访问令牌。如果刷新令牌也过期，则应清除本地存储的令牌并跳转到登录页面。
+
+6. **Q: 用户ID的格式是什么？**
+   A: 用户ID使用标准的UUID格式，例如"e10c923e-0575-42c9-bd46-360eefd0dafd"。在发送请求时，需要确保UUID格式正确。 

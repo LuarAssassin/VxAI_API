@@ -4,7 +4,8 @@
 
 ## 功能特点
 
-- 基于邮箱的用户认证系统
+- 基于手机号的用户认证系统
+- 短信验证码登录和注册
 - JWT令牌认证
 - 自定义用户模型
 - 完整的用户CRUD API
@@ -23,6 +24,7 @@
 - Django 4.x
 - Django REST Framework
 - Simple JWT
+- 腾讯云短信服务
 
 ## 项目结构
 
@@ -39,6 +41,7 @@
 │   │   ├── permissions.py # 权限工具
 │   │   ├── response.py    # 响应工具
 │   │   ├── serializers.py # 序列化器基类
+│   │   ├── sms.py         # 短信工具
 │   │   └── views.py       # 视图基类
 │   ├── admin.py           # 管理员配置
 │   ├── models.py          # 数据模型
@@ -48,6 +51,9 @@
 ├── logs/                  # 日志文件
 ├── media/                 # 媒体文件
 ├── manage.py              # Django管理脚本
+├── .env                   # 环境变量配置（不提交到版本控制）
+├── .env.example           # 环境变量示例文件
+├── .gitignore             # Git忽略文件配置
 └── requirements.txt       # 项目依赖
 ```
 
@@ -66,20 +72,45 @@ cd <project-directory>
 pip install -r requirements.txt
 ```
 
-3. 数据库迁移
+3. 配置环境变量
+
+项目使用`.env`文件存储敏感配置信息。请复制`.env.example`文件并重命名为`.env`，然后填入您的实际配置：
+
+```bash
+cp .env.example .env
+```
+
+然后编辑`.env`文件，填入您的实际配置：
+
+```
+DEBUG=True
+SECRET_KEY=your-secret-key
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+# 腾讯云短信配置
+TENCENT_CLOUD_SMS_SECRET_ID=your-secret-id
+TENCENT_CLOUD_SMS_SECRET_KEY=your-secret-key
+TENCENT_CLOUD_SMS_APP_ID=your-app-id
+TENCENT_CLOUD_SMS_SIGN_NAME=your-sign-name
+TENCENT_CLOUD_SMS_TEMPLATE_ID=your-template-id
+```
+
+注意：`.env`文件包含敏感信息，已在`.gitignore`中配置为不提交到版本控制系统。
+
+4. 数据库迁移
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-4. 创建超级用户
+5. 创建超级用户
 
 ```bash
 python manage.py createsuperuser
 ```
 
-5. 运行开发服务器
+6. 运行开发服务器
 
 ```bash
 python manage.py runserver
@@ -89,8 +120,10 @@ python manage.py runserver
 
 ### 认证相关
 
-- `POST /api/users/token/` - 获取JWT令牌
+- `POST /api/users/token/` - 获取JWT令牌（用户名密码登录）
 - `POST /api/users/token/refresh/` - 刷新JWT令牌
+- `POST /api/users/sms/send/` - 发送短信验证码
+- `POST /api/users/sms/login/` - 短信验证码登录/注册
 
 ### 用户相关
 
@@ -107,20 +140,36 @@ python manage.py runserver
 
 ## 使用示例
 
+### 发送短信验证码
+
+```bash
+curl -X POST http://localhost:8000/api/users/sms/send/ \
+  -H "Content-Type: application/json" \
+  -d '{"phone":"13800138000"}'
+```
+
+### 短信验证码登录/注册
+
+```bash
+curl -X POST http://localhost:8000/api/users/sms/login/ \
+  -H "Content-Type: application/json" \
+  -d '{"phone":"13800138000","code":"123456"}'
+```
+
 ### 用户注册
 
 ```bash
 curl -X POST http://localhost:8000/api/users/ \
   -H "Content-Type: application/json" \
-  -d '{"email":"user@example.com","username":"testuser","password":"securepassword123","password2":"securepassword123"}'
+  -d '{"email":"user@example.com","username":"testuser","phone":"13800138000","password":"securepassword123","password2":"securepassword123"}'
 ```
 
-### 获取令牌
+### 获取令牌（用户名密码登录）
 
 ```bash
 curl -X POST http://localhost:8000/api/users/token/ \
   -H "Content-Type: application/json" \
-  -d '{"email":"user@example.com","password":"securepassword123"}'
+  -d '{"phone":"13800138000","password":"securepassword123"}'
 ```
 
 ### 使用令牌访问API
@@ -153,6 +202,16 @@ curl -X POST http://localhost:8000/api/users/1/restore/ \
 1. `SoftDeleteModel` - 软删除模型基类，提供软删除功能
 2. `SoftDeleteManager` - 软删除管理器，默认只返回未删除的对象
 3. `SoftDeleteViewSet` - 软删除视图集，提供软删除和恢复功能
+
+### 短信验证码登录
+
+项目实现了短信验证码登录功能，通过以下方式：
+
+1. `SMSUtil` - 短信工具类，提供发送和验证短信验证码功能
+2. `SMSVerificationView` - 短信验证码发送视图
+3. `SMSLoginView` - 短信验证码登录视图
+4. `SMSVerificationSerializer` - 短信验证码验证序列化器
+5. `SMSLoginSerializer` - 短信验证码登录序列化器
 
 ### 其他工具类
 

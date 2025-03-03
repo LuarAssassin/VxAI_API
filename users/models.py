@@ -84,39 +84,45 @@ class CustomUserManager(BaseUserManager):
     """
     自定义用户管理器，使用邮箱作为唯一标识符
     """
-    def create_user(self, email, password=None, **extra_fields):
+    def create_user(self, phone, username, password=None, **extra_fields):
         """
-        创建并保存一个普通用户
+        创建并保存一个用户
         """
-        if not email:
-            raise ValueError(_('必须提供邮箱地址'))
-        email = self.normalize_email(email)
-        user = self.model(email=email, **extra_fields)
+        if not phone:
+            raise ValueError(_('必须提供手机号码'))
+        
+        user = self.model(
+            phone=phone,
+            username=username,
+            **extra_fields
+        )
+        
         user.set_password(password)
         user.save(using=self._db)
         return user
-
-    def create_superuser(self, email, password=None, **extra_fields):
+    
+    def create_superuser(self, phone, username, password=None, **extra_fields):
         """
         创建并保存一个超级用户
         """
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
         extra_fields.setdefault('is_active', True)
-
+        
         if extra_fields.get('is_staff') is not True:
             raise ValueError(_('超级用户必须设置is_staff=True'))
         if extra_fields.get('is_superuser') is not True:
             raise ValueError(_('超级用户必须设置is_superuser=True'))
-        return self.create_user(email, password, **extra_fields)
+            
+        return self.create_user(phone, username, password, **extra_fields)
 
 class CustomUser(AbstractUser, SoftDeleteModel):
     """
     自定义用户模型，使用邮箱作为唯一标识符，并继承软删除模型
     """
     username = models.CharField(_('用户名'), max_length=150, unique=True)
-    email = models.EmailField(_('邮箱地址'), unique=True)
-    phone = models.CharField(_('手机号码'), max_length=15, blank=True, null=True)
+    email = models.EmailField(_('邮箱地址'), unique=True, blank=True, null=True)
+    phone = models.CharField(_('手机号码'), max_length=15, unique=True, default='00000000000')
     is_active = models.BooleanField(_('激活状态'), default=True)
     is_staff = models.BooleanField(_('员工状态'), default=False)
     
@@ -127,7 +133,7 @@ class CustomUser(AbstractUser, SoftDeleteModel):
     # 使用自定义管理器
     objects = CustomUserManager()
     
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = 'phone'
     REQUIRED_FIELDS = ['username']
     
     class Meta:
@@ -135,4 +141,19 @@ class CustomUser(AbstractUser, SoftDeleteModel):
         verbose_name_plural = _('用户')
         
     def __str__(self):
-        return self.email
+        return self.phone
+        
+    def save(self, *args, **kwargs):
+        """
+        重写保存方法，确保UUID格式正确
+        """
+        # 如果是新创建的用户且ID不是UUID格式，则生成新的UUID
+        if not self.pk or not isinstance(self.pk, uuid.UUID):
+            try:
+                # 尝试将现有ID转换为UUID
+                if self.pk:
+                    self.pk = uuid.UUID(str(self.pk))
+            except (ValueError, AttributeError):
+                # 如果转换失败，生成新的UUID
+                self.pk = uuid.uuid4()
+        super().save(*args, **kwargs)

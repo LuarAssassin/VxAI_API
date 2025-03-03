@@ -1,0 +1,75 @@
+# Django项目的.gitignore文件
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django相关
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# 如果使用了静态文件收集
+staticfiles/
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv/
+.env/
+
+# IDE相关
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.project
+.pydevproject
+.settings/
+
+# 测试相关
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+cover/
+
+# 日志文件
+logs/
+*.log
+
+# 其他
+.history/
+.sass-cache/
+node_modules/ 

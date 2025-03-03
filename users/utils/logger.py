@@ -1,12 +1,21 @@
 import logging
 import json
 import traceback
+import uuid
 from functools import wraps
 from django.conf import settings
 from django.utils import timezone
 
 # 创建日志记录器
 logger = logging.getLogger('django')
+
+# 自定义JSON编码器，处理UUID类型
+class UUIDEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, uuid.UUID):
+            # 将UUID转换为字符串
+            return str(obj)
+        return super().default(obj)
 
 def log_exception(exc):
     """
@@ -27,16 +36,31 @@ def api_logger(func):
         # 获取请求信息
         method = request.method
         path = request.path
-        query_params = dict(request.query_params)
+        query_params = {}
+        
+        # 检查是否是DRF请求对象，它有query_params属性
+        if hasattr(request, 'query_params'):
+            query_params = dict(request.query_params)
+        # 对于普通Django请求，使用GET
+        elif hasattr(request, 'GET'):
+            query_params = dict(request.GET)
+        
         data = None
         
         # 尝试获取请求体数据
         try:
             if method in ['POST', 'PUT', 'PATCH']:
-                data = request.data
-                # 如果data是QueryDict，转换为dict
-                if hasattr(data, 'dict'):
-                    data = data.dict()
+                # 检查是否是DRF请求对象
+                if hasattr(request, 'data'):
+                    data = request.data
+                    # 如果data是QueryDict，转换为dict
+                    if hasattr(data, 'dict'):
+                        data = data.dict()
+                # 对于普通Django请求，使用POST
+                elif hasattr(request, 'POST'):
+                    data = request.POST
+                    if hasattr(data, 'dict'):
+                        data = data.dict()
         except Exception:
             data = "无法解析的请求数据"
         
@@ -47,10 +71,10 @@ def api_logger(func):
             'path': path,
             'query_params': query_params,
             'data': data,
-            'user_id': request.user.id if request.user.is_authenticated else None,
+            'user_id': request.user.id if hasattr(request, 'user') and request.user.is_authenticated else None,
         }
         
-        logger.info(f"API Request: {json.dumps(request_log, ensure_ascii=False)}")
+        logger.info(f"API Request: {json.dumps(request_log, ensure_ascii=False, cls=UUIDEncoder)}")
         
         # 执行视图函数
         try:
@@ -67,7 +91,7 @@ def api_logger(func):
                 'path': path,
                 'status_code': response.status_code,
                 'execution_time': execution_time,
-                'user_id': request.user.id if request.user.is_authenticated else None,
+                'user_id': request.user.id if hasattr(request, 'user') and request.user.is_authenticated else None,
             }
             
             # 如果是调试模式，记录响应数据
@@ -77,7 +101,7 @@ def api_logger(func):
                 except Exception:
                     response_log['data'] = "无法解析的响应数据"
             
-            logger.info(f"API Response: {json.dumps(response_log, ensure_ascii=False)}")
+            logger.info(f"API Response: {json.dumps(response_log, ensure_ascii=False, cls=UUIDEncoder)}")
             
             return response
             
@@ -91,12 +115,12 @@ def api_logger(func):
                 'method': method,
                 'path': path,
                 'execution_time': execution_time,
-                'user_id': request.user.id if request.user.is_authenticated else None,
+                'user_id': request.user.id if hasattr(request, 'user') and request.user.is_authenticated else None,
                 'exception': str(exc),
                 'traceback': traceback.format_exc(),
             }
             
-            logger.error(f"API Exception: {json.dumps(error_log, ensure_ascii=False)}")
+            logger.error(f"API Exception: {json.dumps(error_log, ensure_ascii=False, cls=UUIDEncoder)}")
             
             # 重新抛出异常
             raise
@@ -136,6 +160,6 @@ class RequestLogMiddleware:
             'user_id': request.user.id if hasattr(request, 'user') and request.user.is_authenticated else None,
         }
         
-        logger.info(f"HTTP Request: {json.dumps(log_data, ensure_ascii=False)}")
+        logger.info(f"HTTP Request: {json.dumps(log_data, ensure_ascii=False, cls=UUIDEncoder)}")
         
         return response 
